@@ -292,6 +292,10 @@ body {
   font-size: 1em;
 }
 
+.spotlight-product-text {
+  padding-left: 1rem;
+}
+
 .spotlight-product-name {
   font-size: 2rem;
 }
@@ -317,6 +321,7 @@ footer {
   font-weight: 600;
   display: flex;
   gap: 1rem;
+  width: 100%;
 }
 
 .nav-pages a:hover {
@@ -325,10 +330,37 @@ footer {
 
 /* Media queries */
 
-@media (max-width: 884px) {
+@media (max-width: 1200px) {
+  .spotlight-flex-container {
+    flex-direction: column;
+  }
+}
+  
+@media (max-width: 920px) {
   .testimonials {
     flex-direction: column;
     align-items: center;
+  }
+
+  .testimonial-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 748px) {
+  .eco-friendly-items {
+    width: 0;
+    height: 0;
+  }
+
+  .product-header {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 730px) {
+  footer {
+    flex-direction: column;
   }
 }
 
@@ -353,6 +385,50 @@ footer {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+
+  .eco-friendly-items {
+    margin-left: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 610px) {
+  .product-header {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 514px) {
+  footer .nav-pages {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 490px) {
+  .spotlight-header {
+    font-size: 2.5rem;
+  }
+  .product-image {
+    height: 0;
+    width: 0;
+  }
+
+  .spotlight-flex-container {
+    margin: 1rem 1rem;
+  }
+
+  .spotlight-product-name {
+    font-size: 1.5rem;
+  }
+
+  .image-viewer {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .acbtn {
+    font-size: 0.9rem;
+  }
 }
 
 @media (max-width: 440px) {
@@ -362,5 +438,21 @@ footer {
 
   .selected-page {
     font-size: 0.95rem;
+  }
+
+  footer .nav-pages {
+    font-size: 0.6rem;
+  }
+
+  footer .nav-pages .new-news .new-feature {
+    font-size: 0.6rem;
+  }
+
+}
+
+@media (max-width: 360px) {
+  .product-header {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
