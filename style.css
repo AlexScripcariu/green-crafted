@@ -8,6 +8,7 @@
 
 
 html, body {
+  /* overflow-x: hidden; */
   height: 100%;
   font-family: 'Lato', serif;
 }
@@ -16,6 +17,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Navbar/Header content */
 
 .title {
   font-size: 1.8rem;
@@ -68,15 +71,18 @@ body {
   color: white;
 }
 
+/* First part of website - call to action */
+
 .calling-action {
   flex-basis: 20rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 3rem;
-  margin: 3rem 1rem 1rem 5rem;
+  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
 }
 
 .calling-action-text-container {
@@ -85,11 +91,15 @@ body {
   align-items: center;
 }
 
-.main-text {
-  font-size: 3rem;
+.text-gradient {
   background: linear-gradient(90deg, #27F573, #76F527);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.main-text {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .main-sub-text {
@@ -105,12 +115,226 @@ body {
   border-radius: 0.3em;
   border: none;
   background-color: #1EBB23;
+  transition: background-color 0.2s ease-in;
+  font-family: 'Lato', serif;
+}
+
+.call-to-action-button:hover {
+  background-color: #199D1E;
+  transition: background-color 0.2s ease-in;
+}
+
+/* Second part of website - user testimonials */
+
+.content-divider {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(235, 235, 235);
+  margin: 1rem auto;
+  margin-top: 2rem;
+}
+
+
+.secondary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 1rem;
+  margin: 2rem 1rem;
+}
+
+.testimonial-container {
+  max-width: 20rem;
+  min-width: 18rem;
+  padding: 1rem 2rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid grey;
+  border-radius: 0.5em;
+  flex-wrap: wrap;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.profile-icon {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  background-color: blue;
+}
+
+.img-1 {
+  background-image: url("https://cdn.lucidpic.com/cdn-cgi/image/w=600,format=auto,metadata=none/66c4384702f8f.png");
+}
+
+.img-2 {
+  background-image: url("https://img.freepik.com/free-photo/front-view-man-posing-outdoors_23-2151038693.jpg");
+}
+
+.img-3 {
+  background-image: url("https://makepix.b-cdn.net/makepix_ea69ac4a-cad4-4783-a4a1-c94f709baa53/random-guy-picture-9688def1_0.png");
+}
+
+
+.rating {
+  color: yellow;
+  text-shadow: 0 0 2px black;
+}
+
+.date-written {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: grey;
+  font-weight: 500;
+}
+
+.tebtn {
+  font-size: 1em;
+}
+
+/* Third part of webiste - general product overview */
+
+.our-products {
+  padding: 1rem 3rem;
+}
+
+.product-header {
+  font-size: 3rem;
+}
+
+.eco-friendly-items {
+  width: 40%;
+  border-radius: 0.35em;
+  float: right;
+  margin-left: 2rem;
+  margin-bottom: 0.9em;
+}
+
+.product-desc {
+  margin-top: 1.5rem;
+  font-size: 1.2em;
+}
+
+.service-guarantees {
+  font-family: 'Lato';
+  font-size: 1.2em;
+  padding: 1em 2em;
+  border: 1px solid grey;
+  border-radius: 0.3em;
+  display: inline-block;
+  box-shadow: 5px 5px;
+}
+
+.list-bonus {
+  font-weight: 600;
+}
+
+.scbtn {
+  font-size: 1em;
+  padding: 0.8em 1.6em;
+  margin: 0 auto 0 0 ;
+  clear: both;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+/* Fourth part - The product spotlight */
+
+.spotlight-header {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.spotlight-flex-container {
+  background-color: #FCFCFC;
+  margin: 2rem 4rem;
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0.8rem;
+  border-radius: 0.3em;
+  border: 1px solid grey;
+  align-items: flex-start;
+}
+
+.product-image {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.3em;
+}
+
+.image-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.acbtn {
+  padding: 0.8rem 1.6rem;
+  font-size: 1em;
+}
+
+.spotlight-product-name {
+  font-size: 2rem;
+}
+
+.spotlight-product-price {
+  font-weight: 600;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.spotlight-product-desc {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding: 2rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-pages a:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+
+@media (max-width: 884px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 674px) {
   .main-text {
     font-size: 2.3rem;
-    text-align: center;
   }
 
   .main-sub-text {
@@ -118,7 +342,7 @@ body {
   }
   
   .calling-action {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 3rem;
   }
 
@@ -126,13 +350,17 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: auto;
-    padding-left: 0.5 rem;
+    padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
 
 @media (max-width: 440px) {
-  .header {
+  .header { 
     font-size: 0.6rem;
+  }
+
+  .selected-page {
+    font-size: 0.95rem;
   }
 }
