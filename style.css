@@ -4,12 +4,12 @@
   flex-basis: 20rem;
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-top: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 6rem;
   padding-top: 6rem;
+  margin-top: 4rem;
 }
 
 .calling-action-text-container {
