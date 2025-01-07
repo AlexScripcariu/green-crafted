@@ -8,7 +8,6 @@
 
 
 html, body {
-  /* overflow-x: hidden; */
   height: 100%;
   font-family: 'Lato', serif;
 }
@@ -18,7 +17,7 @@ body {
   flex-direction: column;
 }
 
-/* Navbar/Header content */
+/* Navbar/Header & Footer content */
 
 .title {
   font-size: 1.8rem;
@@ -29,12 +28,12 @@ body {
 .header-container {
   width: 100%;
   background-color: white;
+  color: black;
   flex-basis: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 10px grey;
-
 }
 
 .header {
@@ -50,12 +49,15 @@ body {
   font-weight: 600;
 }
 
-.nav-pages a{
+.nav-pages {
   display: flex;
   gap: 0.8rem;
   align-items: baseline;
   font-weight: 500;
-  text-decoration: none;
+}
+
+.header .nav-pages a {
+  color: black;
 }
 
 .footer-nav {
@@ -75,6 +77,29 @@ body {
   font-weight: 600;
   color: white;
 } 
+
+.nav-pages a {
+  text-decoration: none;
+}
+
+.nav-pages a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+
+footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding: 2rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Media queries */
 
 @media (max-width: 1200px) {
   .spotlight-flex-container {
