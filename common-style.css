@@ -89,15 +89,23 @@ body {
 
 /* Footer */
 
+footer .nav-pages a{
+  color: white;
+}
+
+footer .nav-pages {
+  margin-top: 0.5rem;
+}
+
 footer {
   background-color: rgb(44, 44, 44);
   color: white;
-  padding: 2rem 2rem;
+  padding: 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  display: flex;
-  gap: 1rem;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 /* Media queries */
@@ -185,6 +193,10 @@ footer {
     width: 0;
   }
 
+  footer {
+    padding: 2rem 1.25rem;
+  }
+
   .spotlight-flex-container {
     margin: 1rem 1rem;
   }
@@ -237,3 +249,5 @@ footer {
     font-size: 0.7rem;
   }
 }
+
+/* 314 PIXELS!!! */
