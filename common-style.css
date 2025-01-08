@@ -16,6 +16,20 @@ body {
   flex-direction: column;
 }
 
+.text-gradient {
+  background: linear-gradient(90deg, #27F573, #76F527);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-divider {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(235, 235, 235);
+  margin: 1rem auto;
+  margin-top: 2rem;
+}
+
 /* Navbar/Header & Footer content */
 
 .title {

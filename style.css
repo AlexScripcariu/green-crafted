@@ -18,12 +18,6 @@
   align-items: center;
 }
 
-.text-gradient {
-  background: linear-gradient(90deg, #27F573, #76F527);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .main-text {
   font-size: 3rem;
   text-align: center;
@@ -52,14 +46,6 @@
 }
 
 /* Second part of website - user testimonials */
-
-.content-divider {
-  width: 90%;
-  height: 2px;
-  background-color: rgb(235, 235, 235);
-  margin: 1rem auto;
-  margin-top: 2rem;
-}
 
 .secondary-content {
   display: flex;

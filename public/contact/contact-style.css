@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-information {
+  margin: 2rem;
+}
+
+.page-header {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.dev-info {
+  margin-top: 1rem;
+  display: inline-flex;
+  gap: 5%;
+  border: 1px solid grey;
+  padding: 1rem;
+  border-radius: 0.4em;
+  
+}
+
+.dev-pfp {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: 12rem;
+  min-width: 5rem;
+  max-height: 12rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 80%;
+}
+
+.dev-name {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.dev-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.dev-titles {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  line-height: 1.6;
+  color: gray;
+  font-weight: 300;
+}
+
+.dev-desc {
+  max-width: 35rem;
+}
+
+.dev-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: blue;
+  border-radius: 0.8em;
+}
+
+.discord-link { 
+  color: white;
+  font-weight: 400;
+  background: linear-gradient(90deg, #5E1CE8, #5E49E8);
+}
+
+.discord-icon {
+  align-self: flex-end;
+}
+
+.github-link {
+  color: white;
+  background: linear-gradient(90deg,#24292e, #2b3137);
+}
+
+/* FAQ section */
+
+.faq {
+  margin: -1.5rem 1rem 0;
+  padding: 0 1rem;
+  flex-grow: 1;
+}
+
+.faq-title {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.faq-separator {
+  width: 80%;
+  background-color: black;
+  height: 0.4%;
+  margin: 0.5rem 0;
+}
+
+.faq-list {
+  margin-left: 1.1rem;
+}
+
+.faq-q {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.faq-a {
+  max-width: 50rem;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.2;
+}
