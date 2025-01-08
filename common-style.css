@@ -13,8 +13,21 @@ html, body {
 }
 
 body {
-  display: flex;
   flex-direction: column;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #27F573, #76F527);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content-divider {
+  width: 90%;
+  height: 2px;
+  background-color: rgb(235, 235, 235);
+  margin: 1rem auto;
+  margin-top: 2rem;
 }
 
 /* Navbar/Header & Footer content */
@@ -34,6 +47,8 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 10px grey;
+  padding-top: 0.4rem;
+  padding-bottom: 0.7rem;
 }
 
 .header {
@@ -88,15 +103,23 @@ body {
 
 /* Footer */
 
+footer .nav-pages a{
+  color: white;
+}
+
+footer .nav-pages {
+  margin-top: 0.5rem;
+}
+
 footer {
   background-color: rgb(44, 44, 44);
   color: white;
-  padding: 2rem 2rem;
+  padding: 2rem;
   font-size: 1.1rem;
   font-weight: 600;
-  display: flex;
-  gap: 1rem;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 /* Media queries */
@@ -184,6 +207,10 @@ footer {
     width: 0;
   }
 
+  footer {
+    padding: 2rem 1.25rem;
+  }
+
   .spotlight-flex-container {
     margin: 1rem 1rem;
   }
@@ -226,4 +253,15 @@ footer {
     font-size: 1.5rem;
     text-align: center;
   }
+
+  .selected-page {
+    font-weight: 600;
+    font-size: 0.8rem;
+  }
+
+  a[href="../contact/contact.html"].selected-page {
+    font-size: 0.7rem;
+  }
 }
+
+/* 314 PIXELS!!! */
