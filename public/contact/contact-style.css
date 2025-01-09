@@ -1,6 +1,7 @@
 body {
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 }
 
 .contact-information {
@@ -61,6 +62,7 @@ body {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .social {
@@ -90,9 +92,9 @@ body {
 /* FAQ section */
 
 .faq {
-  margin: -1.5rem 1rem 0;
+  margin: -1.5rem 1rem 1rem;
   padding: 0 1rem;
-  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .faq-title {
@@ -103,7 +105,7 @@ body {
 .faq-separator {
   width: 80%;
   background-color: black;
-  height: 0.4%;
+  height: 0.05rem;
   margin: 0.5rem 0;
 }
 
@@ -114,6 +116,7 @@ body {
 .faq-q {
   font-weight: 600;
   font-size: 1.2rem;
+  margin: 1rem 0;
 }
 
 .faq-a {
@@ -121,4 +124,44 @@ body {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.2;
+}
+
+@media (max-width: 670px) {
+  .blocked {
+    display: block;
+  }
+}
+
+@media (max-width: 616px) {
+  body {
+    overflow-y: auto;
+  }
+  .dev-pfp {
+    height: 0;
+    width: 0;
+  }
+
+  .faq {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    flex-grow: 1;
+    overflow-y:visible;
+  } 
+
+  .dev-info {
+    display: block;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 410px) {
+  .tq {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-header {
+    font-size: 1.5rem;
+  }
 }
