@@ -126,7 +126,7 @@ body {
   line-height: 1.2;
 }
 
-@media (max-width: 670px) {
+@media (max-width: 600px) {
   .blocked {
     display: block;
   }
