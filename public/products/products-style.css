@@ -1,10 +1,5 @@
-body {
-  display: flex;
-
-}
-
 .main-products {
-  flex-basis: 30rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +18,8 @@ body {
 }
 
 .search-bar {
-  width: 30rem;
+  max-width: 30rem;
+  min-width: 18rem;
   padding: 0.7rem 1rem;
   border-radius: 1em;
   border: 1px solid grey;
@@ -46,16 +42,73 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1rem;
+  margin: 1rem auto;
+  max-height: 40rem;
 }
+
 
 .products-header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.products-header svg {
-  height: 2.5rem;
-  width: 2.5rem;
+.product-grids {
+  overflow-y: auto;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  align-self: center;
+  gap: 0.6rem;
+  width: 80%;
+}
+
+.card {
+  border: 1px solid grey;
+  border-radius: 0.4em;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 2rem;
+  background: linear-gradient(135deg, white 60%, rgb(247, 246, 246));
+}
+
+.card img {
+  height: 10rem;
+  align-self: center;
+  margin-bottom: 1.2rem;
+}
+
+.card-text {
+  line-height: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+
+.product-price {
+  font-size: 0.9rem;
+  color: grey;
+}
+
+@media (max-width: 376px) {
+  .products, .product-grids {
+    margin: 0;
+    padding: 0rem;
+  }
+
+  .product-grids {
+    margin-bottom: 1rem;
+    padding-bottom: 0.3rem;
+  };
 }
