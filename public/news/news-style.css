@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.news-header {
+  background: linear-gradient(217deg, rgba(0, 255, 170, 0.8), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, rgba(14, 122, 211, 0.8), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 13rem;
+  padding: 2rem;
+  padding-top: 4rem;
+}
+
+.page-title {
+  font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.page-title-desc {
+  font-size: clamp(0.85rem, 1.5vw, 1.5rem);
+  font-weight: 400;
+}
+
+.news {
+  padding: 1rem;
+  margin: 1rem;
+  font-family: 'Inter', 'Lato', Serif;
+}
+
+.latest-news {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.news-grid {
+  display: grid;
+}
+
+.news-article {
+  background-color: blue;
+}
