@@ -18,8 +18,7 @@
 }
 
 .search-bar {
-  max-width: 30rem;
-  min-width: 18rem;
+  width: clamp(18rem, 50vw, 30rem);
   padding: 0.7rem 1rem;
   border-radius: 1em;
   border: 1px solid grey;
@@ -27,13 +26,13 @@
   line-height: 1.5;
   font-size: 1rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #FFFFFFE0;
+  background-color: #eeeeeeE0;
   transition: background-color 0.2s ease-in;
 }
 
-.search-bar:hover {
+.search-bar:hover, .search-bar:focus {
   background-color: #FFFFFF;
-  transition: background-color 0.2s ease-in;
+  transition: background-color 0.4s ease-in;
 }
 
 /* Product section */
